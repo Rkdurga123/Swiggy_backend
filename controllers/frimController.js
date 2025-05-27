@@ -14,8 +14,6 @@ const storage = multer.diskStorage({
 
 
 const addFirm=async function(req,res) {
-    
-   
     try {
         const {firmname,area,category,region,offer}=req.body
         const image=req.file? req.fil.filename: undefined
